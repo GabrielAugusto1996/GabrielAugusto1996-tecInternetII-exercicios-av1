@@ -1,5 +1,5 @@
 //Função do Exercicio 01
-function obterMedia(primeiroNumero, segundoNumero) {
+function exercicio01(primeiroNumero, segundoNumero) {
 	
 	var media = parseFloat((parseInt(primeiroNumero) + parseInt(segundoNumero)) / 2);
 	
@@ -8,7 +8,7 @@ function obterMedia(primeiroNumero, segundoNumero) {
 }
 
 //Função do Exercicio 02
-function deveFazerAV3(valorAv1, valorAv2) {
+function exercicio02(valorAv1, valorAv2) {
 	
 	var media = parseFloat((valorAv1 + valorAv2) / 2);
 	
@@ -27,7 +27,7 @@ function deveFazerAV3(valorAv1, valorAv2) {
 
 
 //Função do Exercicio 03
-function escreverNumerosAte(determinadoValor) {
+function exercicio03(determinadoValor) {
 	
 	
 	console.log("Utilizando While: \n");
@@ -67,7 +67,7 @@ function escreverNumerosAte(determinadoValor) {
 }
 
 //Função do Exercicio 04
-function divisiveisPor(x, y) {
+function exercicio04(x, y) {
 
 	for (i = 1; i < y; i++) {
 		
@@ -83,13 +83,16 @@ function divisiveisPor(x, y) {
 
 
 //Função do Exercicio 05
-var valorVetor = [6542, 1235, 3215, 6251, 3215, 3225, 4583, 2151, 2356, 1325, 9965, 1230, 4458, 6352]
 
-var maiorNumero;
+var valorVetor = [6542, 1235, 3215, 6251, 3215, 3225, 4583, 2151, 2356, 1325, 9965, 1230, 4458, 6352];
 
-var menorNumero;
+function exercicio05(valorVetor) {
+	
+	var maiorNumero = valorVetor[0];
 
-function maiorVetor(valorVetor) {
+	var menorNumero = valorVetor[0];
+	
+
 	
 	for(var i in valorVetor) {
 		
@@ -115,19 +118,19 @@ function maiorVetor(valorVetor) {
 
 
 console.log("Exercicio 01");
-obterMedia(2, 5);
+exercicio01(2, 5);
 
 console.log("Exercicio 02");
 
 console.log("Deverá fazer Av3? \n");
-deveFazerAV3(4, 8);
+exercicio02(4, 8);
 
 console.log("Exercicio 03");
 
-escreverNumerosAte(6);
+exercicio03(6);
 
 console.log("Exercicio 04");
-divisiveisPor(7,50);
+exercicio04(7,50);
 
 console.log("Exercicio 05");
-maiorVetor(valorVetor);
+exercicio05(valorVetor);
